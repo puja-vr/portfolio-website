@@ -24,7 +24,7 @@ AppBarTheme appBarTheme() {
     elevation: 0,
     titleTextStyle: GoogleFonts.farro(),
     brightness: Brightness.dark,
-    iconTheme: IconThemeData(color: kwhite),
+    iconTheme: IconThemeData(color: kyellow),
   );
 }
 

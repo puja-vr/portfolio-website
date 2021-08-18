@@ -8,7 +8,14 @@ import 'dart:html' as html;
 
 Widget lEducation(BuildContext context) {
   return Container(
-    color: kblack,
+    decoration: BoxDecoration(
+      gradient: LinearGradient(
+        colors: [kwhite, kblack],
+        begin: Alignment.centerLeft,
+        end: Alignment.centerRight,
+        stops: [0.45, 0.7],
+      ),
+    ),
     padding: EdgeInsets.only(top: 50),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -23,7 +30,14 @@ Widget lEducation(BuildContext context) {
 
 Widget sEducation(BuildContext context) {
   return Container(
-    color: kblack,
+    decoration: BoxDecoration(
+      gradient: LinearGradient(
+        colors: [kwhite, kblack],
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        stops: [0.55, 0.7],
+      ),
+    ),
     child: Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,

@@ -123,28 +123,28 @@ contact(BuildContext context) {
         IconButton(
             onPressed: () =>
                 html.window.open("https://github.com/puja-vr", "GitHub"),
-            icon: Image.asset("contact/github.png"),
+            icon: Image.asset("assets/github.png"),
             iconSize: 50),
         IconButton(
             onPressed: () => html.window.open(
                 "https://www.linkedin.com/in/puja-v-r-4bb47120b/", "LinkedIn"),
-            icon: Image.asset("contact/linkedin.png"),
+            icon: Image.asset("assets/linkedin.png"),
             iconSize: 50),
         IconButton(
             onPressed: () {},
-            icon: Image.asset("contact/discord.png"),
+            icon: Image.asset("assets/discord.png"),
             iconSize: 50),
         IconButton(
             onPressed: () {},
-            icon: Image.asset("contact/insta.png"),
+            icon: Image.asset("assets/insta.png"),
             iconSize: 50),
         IconButton(
             onPressed: () {},
-            icon: Image.asset("contact/pinterest.png"),
+            icon: Image.asset("assets/pinterest.png"),
             iconSize: 50),
         IconButton(
             onPressed: () {},
-            icon: Image.asset("contact/mail.png"),
+            icon: Image.asset("assets/mail.png"),
             iconSize: 50),
       ],
     ),

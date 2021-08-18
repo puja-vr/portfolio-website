@@ -19,7 +19,7 @@ projGrid(BuildContext context) {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              imgCard("grid1.jpg"),
+              imgCard("assets/grid1.jpg"),
               projCard(
                   name: "Gruha Mart",
                   desc: "An e-commerce application",
@@ -41,7 +41,7 @@ projGrid(BuildContext context) {
                   name: "Area and Place Locator",
                   desc: "Manages areas and the places inside it",
                   lang: "Java Swing"),
-              imgCard("grid2.jpg"),
+              imgCard("assets/grid2.jpg"),
             ],
           ),
         ],
