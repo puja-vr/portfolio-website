@@ -46,7 +46,7 @@ class _SmallScreenState extends State<SmallScreen> {
                   borderRadius: BorderRadius.circular(15.0),
                   border: Border.all(color: Colors.white, width: 1.5),
                   image: DecorationImage(
-                    image: AssetImage("drawer.png"),
+                    image: AssetImage("assets/drawer.png"),
                     fit: BoxFit.fitHeight,
                   ),
                 ),

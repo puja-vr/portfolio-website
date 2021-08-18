@@ -31,9 +31,7 @@ blogList(BuildContext context) {
     width: ResponsiveWidget.isSmallScreen(context)
         ? ScreenSize.screenWidth * 0.8
         : ScreenSize.screenWidth * 0.75,
-    height: ResponsiveWidget.isSmallScreen(context)
-        ? ScreenSize.screenHeight * 0.65
-        : ScreenSize.screenHeight * 0.6,
+    height: ScreenSize.screenHeight * 0.6,
     child: StreamBuilder(
       stream: DatabaseService().blogCollection.snapshots(),
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
@@ -80,7 +78,6 @@ Widget blogCard(
           top: 30,
           bottom: 30,
           child: Column(
-            //mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(title, style: TextStyle(fontSize: 20)),
@@ -108,15 +105,16 @@ Widget blogCard(
 }
 
 contact(BuildContext context) {
+  bool isLarge = ResponsiveWidget.isLargeScreen(context);
+
   return Container(
     margin: EdgeInsets.fromLTRB(0, 10, 0, 10),
     decoration: BoxDecoration(
       color: kwhite,
       borderRadius: BorderRadius.circular(30),
     ),
-    width: ResponsiveWidget.isLargeScreen(context)
-        ? ScreenSize.screenWidth * 0.3
-        : ScreenSize.screenWidth * 0.8,
+    width:
+        isLarge ? ScreenSize.screenWidth * 0.3 : ScreenSize.screenWidth * 0.8,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
@@ -124,28 +122,28 @@ contact(BuildContext context) {
             onPressed: () =>
                 html.window.open("https://github.com/puja-vr", "GitHub"),
             icon: Image.asset("assets/github.png"),
-            iconSize: 50),
+            iconSize: isLarge ? 50 : 30),
         IconButton(
             onPressed: () => html.window.open(
                 "https://www.linkedin.com/in/puja-v-r-4bb47120b/", "LinkedIn"),
             icon: Image.asset("assets/linkedin.png"),
-            iconSize: 50),
+            iconSize: isLarge ? 50 : 30),
         IconButton(
             onPressed: () {},
             icon: Image.asset("assets/discord.png"),
-            iconSize: 50),
+            iconSize: isLarge ? 50 : 30),
         IconButton(
             onPressed: () {},
             icon: Image.asset("assets/insta.png"),
-            iconSize: 50),
+            iconSize: isLarge ? 50 : 30),
         IconButton(
             onPressed: () {},
             icon: Image.asset("assets/pinterest.png"),
-            iconSize: 50),
+            iconSize: isLarge ? 50 : 30),
         IconButton(
             onPressed: () {},
             icon: Image.asset("assets/mail.png"),
-            iconSize: 50),
+            iconSize: isLarge ? 50 : 30),
       ],
     ),
   );

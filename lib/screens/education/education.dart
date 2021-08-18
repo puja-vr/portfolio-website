@@ -51,19 +51,19 @@ Widget sEducation(BuildContext context) {
                 press: () => html.window.open(
                     "http://stjosephstechnology.ac.in/web/index.html",
                     "StJoseph"),
-                image: "stJosephs.png"),
+                image: "assets/stJosephs.png"),
             nameCard(
                 name: "Sushil Hari International HSS",
                 year: "2017 - 2019",
                 press: () => html.window
                     .open("https://www.sushilharischool.in/", "Shirs"),
-                image: "Shirs.png"),
+                image: "assets/Shirs.png"),
             nameCard(
                 name: "The Ashram Matriculation HSS",
                 year: "2004 - 2017",
                 press: () =>
                     html.window.open("http://www.theashram.in/", "Ashram"),
-                image: "Ashram.png"),
+                image: "assets/Ashram.png"),
           ],
           options: CarouselOptions(
             height: 150,
